@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'pacifico' : ['Pacifico']
+      },
+      colors: {
+        'primary' : '#E88F2A'
+      }
+    },
   },
   plugins: [],
 }

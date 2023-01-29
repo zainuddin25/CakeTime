@@ -1,0 +1,80 @@
+<div class="w-full top-0 fixed bg-black">
+    <div class="container px-8 lg:px-24 mx-auto flex justify-between items-center py-7">
+        <h1 class="font-pacifico text-xl lg:text-3xl text-primary">CakeTime</h1>
+        <ul class="hidden lg:flex justify-center items-center text-white">
+            <li class="pr-8">
+                <button class="text-lg">
+                    Home
+                </button>
+            </li>
+            <li class="pr-8">
+                <button class="text-lg">
+                    About Us
+                </button>
+            </li>
+            <li class="pr-8">
+                <button class="text-lg">
+                    Menu
+                </button>
+            </li>
+            <li class="pr-8">
+                <button class="text-lg">
+                    Discount
+                </button>
+            </li>
+            <li class="pr-8 border-r-4 border-primary">
+                <button class="text-lg">
+                    Clients
+                </button>
+            </li>
+            <li class="pr-8 ">
+                <div class="flex justify-between items-center gap-8 pl-8">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        <p class="text-lg">085156970093</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">mail</span>
+                        <p class="text-lg">caketime@gmail.com</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="block lg:hidden cursor-pointer" (click)="openNav()">
+            <span class="material-symbols-outlined text-white text-2xl">menu</span>
+        </div>
+    </div>
+</div>
+<div class="w-screen h-screen bg-black fixed top-0 {{visibility}} flex justify-center items-center">
+    <div class="w-screen px-8 fixed top-0 py-7 flex justify-between items-center">
+        <h1 class="font-pacifico text-primary text-xl">CakeTime</h1>
+        <span class="material-symbols-outlined text-white text-2xl cursor-pointer" (click)="closeNav()">close</span>
+    </div>
+    <div class="text-white flex flex-col text-center">
+        <button class="py-4 text-lg font-semibold hover:text-primary duration-200" (click)="closeNav()">
+            Home
+        </button>
+        <button class="py-4 text-lg font-semibold hover:text-primary duration-200" (click)="closeNav()">
+            About Us
+        </button>
+        <button class="py-4 text-lg font-semibold hover:text-primary duration-200" (click)="closeNav()">
+            Menu
+        </button>
+        <button class="py-4 text-lg font-semibold hover:text-primary duration-200" (click)="closeNav()">
+            Discount
+        </button>
+        <button class="py-4 text-lg font-semibold hover:text-primary duration-200 border-b-4 border-primary">
+            Clients
+        </button>
+        <div class="py-4 justify-center items-center gap-2">
+            <div class="flex items-center gap-2 justify-center py-2">
+                <span class="material-symbols-outlined text-primary text-lg">call</span>
+                <p class="text-sm">085156970093</p>
+            </div>
+            <div class="flex items-center gap-2 justify-center py-2">
+                <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                <p class="text-sm">caketime@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
