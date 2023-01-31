@@ -9,6 +9,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BirthdayCakeComponent } from './components/birthday-cake/birthday-cake.component';
+import { WeadingCakeComponent } from './components/weading-cake/weading-cake.component';
+import { CustomCakeComponent } from './components/custom-cake/custom-cake.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BirthdayCakeComponent } from './components/birthday-cake/birthday-cake.
     HeroComponent,
     AboutComponent,
     MenuComponent,
-    BirthdayCakeComponent
+    BirthdayCakeComponent,
+    WeadingCakeComponent,
+    CustomCakeComponent
   ],
   imports: [
     BrowserModule,

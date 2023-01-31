@@ -13,13 +13,18 @@
             <div class="px-10 lg:px-16 border-2 border-black bg-black"></div>
         </div>
         <div class="lg:mt-4 text-center">
-            <p class="capitalize text-lg font-bold text-primary my-4">Category cake</p>
-            <div class="w-2/4 bg-black mx-auto p-4">
-                <div class="border-2 border-white grid grid-cols-3 p-4">
-                    <button class="uppercase font-bold hover:text-white hover:bg-primary duration-300 text-white bg-primary px-4 py-5">birthday cake</button>
-                    <button class="uppercase font-bold hover:text-white hover:bg-primary duration-300 text-primary px-4 py-5">weading cake</button>
-                    <button class="uppercase font-bold hover:text-white hover:bg-primary duration-300 text-primary px-4 py-5">birthday cake</button>
+            <p class="capitalize text-sm lg:text-lg font-bold text-primary my-4">Category cake</p>
+            <div class="w-full lg:w-2/4 bg-black mx-auto p-3 lg:p-4">
+                <div class="border-2 border-white grid grid-cols-3 p-3 lg:p-4">
+                    <button class="uppercase font-bold text-xs lg:text-base hover:text-white hover:bg-primary duration-300 text-primary px-4 py-5" [ngClass]="{'bg-primary text-white' : birthdayCake}" (click)="clickBirthdayCake()">birthday cake</button>
+                    <button class="uppercase font-bold text-xs lg:text-base hover:text-white hover:bg-primary duration-300 text-primary px-4 py-5" [ngClass]="{'bg-primary text-white' : weadingCake}" (click)="clickWeadingCake()">weading cake</button>
+                    <button class="uppercase font-bold text-xs lg:text-base hover:text-white hover:bg-primary duration-300 text-primary px-4 py-5" [ngClass]="{'bg-primary text-white' : customCake}" (click)="clickCustomCake()">custom cake</button>
                 </div> 
+            </div>
+            <div [ngSwitch]="selected">
+                <app-birthday-cake *ngSwitchCase="'birthday'"></app-birthday-cake>
+                <app-weading-cake *ngSwitchCase="'weading'"></app-weading-cake>
+                <app-custom-cake *ngSwitchCase="'custom'"></app-custom-cake>
             </div>
         </div>
     </div>
