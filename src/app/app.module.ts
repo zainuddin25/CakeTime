@@ -7,6 +7,8 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { BirthdayCakeComponent } from './components/birthday-cake/birthday-cake.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AboutComponent } from './components/about/about.component';
     LandingPageComponent,
     HeaderComponent,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    MenuComponent,
+    BirthdayCakeComponent
   ],
   imports: [
     BrowserModule,
