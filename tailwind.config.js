@@ -9,7 +9,8 @@ module.exports = {
         'pacifico' : ['Pacifico']
       },
       colors: {
-        'primary' : '#E88F2A'
+        'primary' : '#E88F2A',
+        'secondary' : '#FAF3EB'
       }
     },
   },
