@@ -11,6 +11,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BirthdayCakeComponent } from './components/birthday-cake/birthday-cake.component';
 import { WeadingCakeComponent } from './components/weading-cake/weading-cake.component';
 import { CustomCakeComponent } from './components/custom-cake/custom-cake.component';
+import { ServiceComponent } from './components/service/service.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomCakeComponent } from './components/custom-cake/custom-cake.compon
     MenuComponent,
     BirthdayCakeComponent,
     WeadingCakeComponent,
-    CustomCakeComponent
+    CustomCakeComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
