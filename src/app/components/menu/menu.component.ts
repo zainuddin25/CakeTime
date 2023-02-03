@@ -9,7 +9,7 @@ export class MenuComponent {
   birthdayCake: boolean = true
   weadingCake: boolean = false
   customCake: boolean = false
-  selected: string = 'custom'
+  selected: string = 'birthday'
 
   clickBirthdayCake() {
     this.birthdayCake = true

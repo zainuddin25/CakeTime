@@ -12,6 +12,7 @@ import { BirthdayCakeComponent } from './components/birthday-cake/birthday-cake.
 import { WeadingCakeComponent } from './components/weading-cake/weading-cake.component';
 import { CustomCakeComponent } from './components/custom-cake/custom-cake.component';
 import { ServiceComponent } from './components/service/service.component';
+import { DiscountComponent } from './components/discount/discount.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ServiceComponent } from './components/service/service.component';
     BirthdayCakeComponent,
     WeadingCakeComponent,
     CustomCakeComponent,
-    ServiceComponent
+    ServiceComponent,
+    DiscountComponent
   ],
   imports: [
     BrowserModule,
